@@ -1,0 +1,207 @@
+@charset "utf-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+@font-face {
+  font-family: "Pretendard-Regular";
+  src: url("https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+    format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SeoulHangangM";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/SeoulHangangM.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+body {
+  font-family: "Pretendard-Regular";
+}
+
+.section {
+  height: 100vh;
+  background: #feded6;
+}
+#section0 {
+  background: url(../img/bg2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#section2 {
+  background-image: url(../img/manbg.jpg);
+  background-repeat: no-repeat;
+  background-position: left/cover;
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+  background: #feded6;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #feded6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.con {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.con h1 {
+  font-size: 30vh;
+}
+.con h3 {
+  color: transparent;
+  -webkit-text-stroke: 2px #fa5a32;
+  font-size: 10vh;
+}
+#section2 {
+  position: relative;
+}
+.main {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: left;
+}
+.txt h4 {
+  font-size: 32px;
+  font-weight: 100;
+  color: #333;
+  padding: 15px 0 15px;
+}
+.txt1 {
+  font-size: 26px;
+  padding: 15px 0 15px;
+  color: #333;
+}
+.txt1 h2 {
+  width: 100%;
+  padding: 15px 0 15px;
+}
+.txt2 ul {
+  display: flex;
+  padding: 15px 0 15px;
+  color: #333;
+}
+.txt2 ul li img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.pr1 {
+  position: absolute;
+  left: 20%;
+  top: 30%;
+  transform: translate(-25%, -30%);
+  box-sizing: border-box;
+  text-align: left;
+}
+.top h1 {
+  font-size: 42px;
+}
+.top p {
+  font-size: 18px;
+}
+.top h1,
+.top p {
+  padding: 15px 0 15px;
+}
+.top p:last-child {
+  border-bottom: 1px solid #fa5a32;
+}
+.con1 {
+  border-bottom: 1px solid #fa5a32;
+}
+.con1 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.left1 {
+  margin-right: 50px;
+}
+.left1 p {
+  padding: 15px 0 15px;
+}
+.right1 > div {
+  display: flex;
+  align-items: center;
+}
+.right1 > div p {
+  border-radius: 100%;
+  background-color: black;
+  width: 40px;
+  height: 10px;
+  margin-right: 15px;
+}
+.right1 > div p:nth-child(2) {
+  border-radius: 100%;
+  background-color: white;
+  width: 40px;
+  height: 10px;
+}
+.right1 p {
+  padding: 15px 0 15px;
+}
+button {
+  display: block;
+  padding: 5px 25px;
+  background-color: #333;
+}
+button a {
+  color: #fff;
+  font-size: 18px;
+}
+.btn_img1 {
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/Apple\ Thunderbolt\ Display1.png);
+  background-position: right 20% top 50%;
+  background-size: cover;
+  background-size: 40% auto;
+  background-repeat: no-repeat;
+}
+.btn_img2 {
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/Apple\ Thunderbolt\ Display2.png);
+  background-position: right 20% top 50%;
+  background-size: cover;
+  background-size: 40% auto;
+  background-repeat: no-repeat;
+}
+#section4 {
+  font-family: "SeoulHangangM";
+  font-size: 32px;
+}
+.utu {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 0 30px 30px 0;
+}

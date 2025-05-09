@@ -1,0 +1,544 @@
+@charset "utf-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+body {
+  /* width: 100vw; */
+  height: 100vh;
+}
+.head {
+  width: 100%;
+  /* max-width: 100%; */
+  height: 60px;
+  /* margin: 0 auto; */
+  padding: 0 25px;
+  margin-top: 20px;
+  box-sizing: border-box;
+  position: absolute;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.head .logo {
+  width: 102px;
+  height: 24px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.head .logo a {
+  background: url(https://www.kia.com/etc.clientlibs/kwp-global/clientlibs/clientlib-site/resources/images/common/logo_w.svg)
+    center/cover no-repeat;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.head .left ul {
+  display: flex;
+  gap: 48px;
+  padding-left: 24px;
+  /* width: calc(100% - 261px); */
+}
+.head .left ul li a {
+  font-size: 18px;
+  color: #fff;
+}
+.head .left ul li:not(:nth-child(7)) {
+  /* padding: 0 24px; */
+}
+/* .head .left ul li:nth-child(7) {
+  display: flex;
+  justify-content: flex-end;
+  width: 60%;
+} */
+.right {
+  /* display: flex;
+  align-items: center; */
+}
+.right > ul {
+  position: relative;
+  display: flex;
+  /* position: absolute;
+  right: 5%;
+  top: 22px; */
+  gap: 48px;
+}
+.right > ul > li > a {
+  font-size: 18px;
+  color: #fff;
+  line-height: 1.43;
+}
+.right > ul:first-child.on {
+  display: block;
+}
+
+/* .right ul li button {
+  margin-left: 32px;
+  background: none;
+  border: none;
+} */
+/* .right div {
+  position: absolute;
+  left: 5%;
+  top: 100%;
+  border: 1px solid #000;
+  background: #fff;
+  border-radius: 10px;
+  display: none;
+} */
+
+/* .right div li {
+  padding: 19px 24px;
+  overflow: hidden;
+} */
+/* .right div li a {
+  font-size: 18px;
+  color: #697278;
+  line-height: 1.43;
+}
+.right div li:hover {
+  background: #000;
+  box-sizing: border-box;
+  color: #fff;
+} */
+.right > ul > li > a {
+  display: flex;
+}
+.right > ul > li div {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  display: block;
+  background: #fff;
+  border-radius: 10px;
+  display: none;
+}
+.right > ul > li div ul li {
+  padding: 20px 30px;
+  margin: 2px;
+}
+.right > ul > li div ul li:hover {
+  background: #000;
+}
+.right > ul > li div ul li:hover a {
+  color: #fff;
+}
+.right > ul > li.lanBtn .lanimg img {
+  transition: 0.5s;
+}
+.right > ul > li.lanBtn .lanimg img.on {
+  transform: rotate(180deg);
+}
+#main {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+.swiper {
+  width: 100%;
+  height: 100vh;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#main .swiper-pagination-bullet-active {
+  background: rgba(255, 255, 255, 1) !important;
+}
+#main .swiper-pagination-bullet {
+  background: transparent;
+  border: 1px solid #fff;
+  opacity: 1;
+}
+#main .txt > div {
+  position: absolute;
+  left: 5%;
+  bottom: 20%;
+  z-index: 100;
+}
+#main .txt > div.on {
+  /* opacity: 1; */
+}
+#main .txt > div h5,
+#main .txt > div h1 {
+  opacity: 0;
+  transform: translateX(100%);
+}
+#main .txt > div h5.on {
+  opacity: 1;
+  transform: translateX(0);
+  transition: 1s;
+}
+#main .txt > div h1.on {
+  opacity: 1;
+  transform: translateX(0);
+  transition: 1s;
+  transition-delay: 0.5s;
+}
+#main .txt > div h5 {
+  font-size: 18px;
+  color: #fff;
+}
+#main .txt > div h1 {
+  font-size: 52px;
+  color: #fff;
+}
+#main .txt .con {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  opacity: 0;
+  gap: 20px;
+  /* position: absolute;
+  left: 0;
+  top: 90%; */
+  transform: translateX(20px);
+  transition: transform 0.5s;
+}
+#main .txt .con p {
+  padding: 10px 20px;
+}
+#main .txt .con p:first-child {
+  background: #fff;
+}
+#main .txt .con p:nth-child(2) {
+  background: #000;
+}
+#main .txt .con p:nth-child(2) a {
+  color: #fff;
+}
+#main .txt .con.on {
+  opacity: 1;
+  transform: translateX(0);
+}
+.con2 > div {
+  text-align: center;
+  margin: 70px 0 40px;
+}
+.con2 > ul {
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid #dadbdc;
+  margin-bottom: 50px;
+}
+.con2 > ul li {
+  margin: 0 20px;
+  cursor: pointer;
+}
+.con2 > ul li:first-child {
+  border-bottom: 3px solid #000;
+}
+.main2 {
+  margin: 0 auto;
+  max-width: 1344px;
+  width: 100%;
+  padding-top: 0;
+}
+.visual {
+  height: 800px;
+  margin: 0 auto;
+  border: 1px solid #dadbdc;
+  padding: 40px 40px;
+  border-radius: 15px;
+  /* height: auto; */
+}
+.main2 .visual .swiper {
+  overflow: visible;
+}
+.visual .sub .middle {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.visual .sub .middle li {
+  display: flex;
+  justify-content: space-between;
+}
+.visual .sub .middle li div:last-child {
+  text-align: right;
+  margin-bottom: 20px;
+}
+.visual .sub .top li {
+  text-align: left;
+}
+.visual .sub .top li:nth-child(2) {
+  display: flex;
+  justify-content: end;
+}
+.visual .sub .top li p {
+  border: 1px solid #37434b;
+  border-radius: 25px;
+  padding: 0 17px;
+  background-color: #37434b;
+  color: #fff;
+}
+.visual .sub .top li .bar {
+  background-color: #d2d2d2;
+  width: 1px;
+  height: 16px;
+  display: inline-block;
+  margin: 0 12px;
+}
+.visual .sub > div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.visual .won {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding-top: 24px;
+  border-top: 1px solid #d2d2d2;
+  margin-bottom: 48px;
+}
+.visual .sub .foop {
+  text-align: center;
+}
+.visual .sub .foop a {
+  display: inline-block;
+  border: 1px solid #dadbdc;
+  padding: 15px 20px;
+}
+.visual .sub .foop a:nth-child(2) {
+  background: #37434b;
+  color: #fff;
+}
+.visual .sub .foop a:hover {
+  transition: 2s ease-in-out;
+  opacity: 0.8;
+}
+.best-txt {
+  color: #697278;
+  margin-top: 36px;
+  z-index: 2;
+}
+.main2 .swiper-pagination-bullet-active {
+  background: rgba(0, 0, 0, 1) !important;
+}
+.main2 .swiper-pagination-bullet {
+  background: transparent;
+  border: 1px solid #000;
+  opacity: 1;
+}
+.pdp {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1344px;
+  display: flex;
+  gap: 24px;
+  padding: 120px 0;
+}
+.pdp .link {
+  height: 196px;
+  border: 1px solid #37434b;
+  flex: 1;
+  padding: 24px;
+  position: relative;
+  cursor: pointer;
+  position: relative;
+}
+.pdp .link:hover {
+  background-color: #05141f;
+  color: #fff;
+  transition: all 1s;
+}
+.pdp .link .pdplink img {
+  width: 32px;
+  height: 32px;
+}
+.pdp .link:hover .pdp-icon {
+  display: none;
+  transition: 3s ease-in;
+  transition-delay: 4;
+}
+.pdp .pdplinktit {
+  display: flex;
+  justify-content: end;
+  position: absolute;
+  bottom: 24px;
+  right: 8px;
+  color: #fff;
+}
+h1 {
+  text-align: center;
+}
+.news {
+  display: flex;
+  margin: 64px auto 80px;
+  width: 100%;
+  max-width: 1344px;
+}
+.News1 {
+  background-color: #697278;
+  width: 50%;
+  position: relative;
+  padding: 80px 40px;
+  box-sizing: border-box;
+}
+.News1 a {
+  border: 1px solid #fff;
+  background-color: #fff;
+  padding: 10px;
+  position: absolute;
+  left: 50px;
+  bottom: 50px;
+}
+.NEws2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.NEws3 {
+  margin: 80px auto 120px;
+  width: 100%;
+  max-width: 1344px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+footer {
+  width: 100%;
+  background: #05141f;
+}
+footer .foot-logo {
+  width: 102px;
+  padding: 64px 0 0 64px;
+}
+#foot {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  padding: 0 64px 40px;
+}
+.foot-con ul li,
+.foot-link ul li {
+  margin-top: 24px;
+}
+
+.foot-con ul li a {
+  color: #fff;
+}
+
+.foot-link ul li a {
+  color: #697279;
+}
+.foot-con2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0 64px 24px;
+}
+.foot-inner ul {
+  display: flex;
+  align-items: center;
+}
+.foot-inner ul li a {
+  color: #fff;
+}
+.foot-inner1 {
+  display: flex;
+  align-items: center;
+}
+.foot-inner1 p a {
+  color: #fff;
+}
+.foot-inner2 > div {
+  display: flex;
+}
+.drop {
+  position: relative;
+  display: inline-block;
+  margin-left: 40px;
+}
+.dropbtn {
+  font-size: 14px;
+  font-weight: 400;
+  border: 1px solid #010e18;
+  width: 270px;
+  padding: 16px 24px;
+  color: #fff;
+  background: #010e18;
+  text-align: left;
+  background-image: url(https://www.kia.com/content/dam/kwp/descriptive/ic_arow_donw_w.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+}
+.dropdown {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  width: 100%;
+  max-height: 270px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  display: none;
+}
+.dropdown ul {
+  border: 1px solid #37434b;
+}
+.dropdown ul li a {
+  color: #f8f8f8;
+  width: 100%;
+  display: block;
+  padding: 10px 24px;
+  font-size: 14px;
+}
+.foot-con3 {
+  padding: 40px 66px 24px;
+  background-color: #010e18;
+}
+.foot-inner3 {
+  display: flex;
+  justify-content: space-between;
+}
+.foot-inner3 p {
+  color: #697279;
+  font-size: 14px;
+}
+.right {
+  display: flex;
+}
+.right p {
+  margin-left: 20px;
+}
+.foot-inner4 ul {
+  display: flex;
+  justify-content: flex-start;
+  gap: 50px;
+  align-items: center;
+  vertical-align: middle;
+  margin-top: 30px;
+}
+.foot-inner4 ul li img {
+  vertical-align: top;
+}
+.foot-inner4 ul li span {
+  display: inline-block;
+  color: #697279;
+  font-size: 12px;
+}
