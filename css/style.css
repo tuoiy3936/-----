@@ -75,7 +75,7 @@ body {
 }
 .con h3 {
   color: transparent;
-  -webkit-text-stroke: 2px #fa5a32;
+  -webkit-text-stroke: 1px #fa5a32;
   font-size: 10vh;
 }
 #section2 {
@@ -168,6 +168,26 @@ body {
 .right1 p {
   padding: 15px 0 15px;
 }
+.right2 > div {
+  display: flex;
+  align-items: center;
+}
+.right2 > div p {
+  border-radius: 100%;
+  background-color: #1e1e1e;
+  width: 40px;
+  height: 10px;
+  margin-right: 15px;
+}
+.right2 > div p:nth-child(2) {
+  border-radius: 100%;
+  background-color: #efe5d9;
+  width: 40px;
+  height: 10px;
+}
+.right2 p {
+  padding: 15px 0 15px;
+}
 button {
   display: block;
   padding: 5px 25px;
@@ -198,6 +218,9 @@ button a {
 #section4 {
   font-family: "SeoulHangangM";
   font-size: 32px;
+}
+#section4 h1 {
+  margin-left: 100px;
 }
 .utu {
   position: absolute;
